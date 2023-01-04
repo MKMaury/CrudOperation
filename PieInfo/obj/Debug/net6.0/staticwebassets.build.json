@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GzSS6uNTv2PEr8KYDoa2Q1rsJKRo9/GAoeJv6ts+hEA=",
+  "Hash": "byJQ4KWQkuD1PPLlX10buDgheUdNmWI5Xw0jvtJ8nx8=",
   "Source": "PieInfo",
   "BasePath": "_content/PieInfo",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\source\\repos\\PieInfo\\PieInfo\\wwwroot\\css\\Superherobootswatchtheme.css",
+      "SourceId": "PieInfo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\PieInfo\\PieInfo\\wwwroot\\",
+      "BasePath": "_content/PieInfo",
+      "RelativePath": "css/Superherobootswatchtheme.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Superherobootswatchtheme.css"
     },
     {
       "Identity": "C:\\Users\\ADMIN\\source\\repos\\PieInfo\\PieInfo\\wwwroot\\favicon.ico",
