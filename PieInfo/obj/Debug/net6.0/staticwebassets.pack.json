@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\PieInfo.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\ADMIN\\source\\repos\\PieInfo\\PieInfo\\wwwroot\\css\\Superherobootswatchtheme.css",
+      "PackagePath": "staticwebassets\\css\\Superherobootswatchtheme.css"
+    },
+    {
       "Id": "C:\\Users\\ADMIN\\source\\repos\\PieInfo\\PieInfo\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
