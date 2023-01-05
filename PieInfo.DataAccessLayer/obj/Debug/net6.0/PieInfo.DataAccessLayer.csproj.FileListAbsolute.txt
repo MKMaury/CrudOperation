@@ -1,0 +1,15 @@
+C:\Users\ADMIN\source\repos\PieInfo\PieInfo.DataAccessLayer\bin\Debug\net6.0\PieInfo.DataAccessLayer.deps.json
+C:\Users\ADMIN\source\repos\PieInfo\PieInfo.DataAccessLayer\bin\Debug\net6.0\PieInfo.DataAccessLayer.dll
+C:\Users\ADMIN\source\repos\PieInfo\PieInfo.DataAccessLayer\bin\Debug\net6.0\PieInfo.DataAccessLayer.pdb
+C:\Users\ADMIN\source\repos\PieInfo\PieInfo.DataAccessLayer\bin\Debug\net6.0\PieInfo.Models.dll
+C:\Users\ADMIN\source\repos\PieInfo\PieInfo.DataAccessLayer\bin\Debug\net6.0\PieInfo.Models.pdb
+C:\Users\ADMIN\source\repos\PieInfo\PieInfo.DataAccessLayer\obj\Debug\net6.0\PieInfo.DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\ADMIN\source\repos\PieInfo\PieInfo.DataAccessLayer\obj\Debug\net6.0\PieInfo.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\source\repos\PieInfo\PieInfo.DataAccessLayer\obj\Debug\net6.0\PieInfo.DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\ADMIN\source\repos\PieInfo\PieInfo.DataAccessLayer\obj\Debug\net6.0\PieInfo.DataAccessLayer.AssemblyInfo.cs
+C:\Users\ADMIN\source\repos\PieInfo\PieInfo.DataAccessLayer\obj\Debug\net6.0\PieInfo.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\source\repos\PieInfo\PieInfo.DataAccessLayer\obj\Debug\net6.0\PieInfo.DataAccessLayer.csproj.CopyComplete
+C:\Users\ADMIN\source\repos\PieInfo\PieInfo.DataAccessLayer\obj\Debug\net6.0\PieInfo.DataAccessLayer.dll
+C:\Users\ADMIN\source\repos\PieInfo\PieInfo.DataAccessLayer\obj\Debug\net6.0\refint\PieInfo.DataAccessLayer.dll
+C:\Users\ADMIN\source\repos\PieInfo\PieInfo.DataAccessLayer\obj\Debug\net6.0\PieInfo.DataAccessLayer.pdb
+C:\Users\ADMIN\source\repos\PieInfo\PieInfo.DataAccessLayer\obj\Debug\net6.0\ref\PieInfo.DataAccessLayer.dll

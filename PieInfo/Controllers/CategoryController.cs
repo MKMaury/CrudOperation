@@ -1,19 +1,20 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PieInfo.Data;
+using PieInfo.DataAccessLayer.Infrastructure.IRepository;
 using PieInfo.Models;
 
 namespace PieInfo.Controllers
 {
     public class CategoryController : Controller
     {
-        private readonly ApplicationDbContext _context;
-        public CategoryController(ApplicationDbContext context)
+        private IUnitOfWork _unitofWork;
+        public CategoryController(IUnitOfWork unitofWork)
         {
-            _context = context;
+            _unitofWork = unitofWork;
         }
         public IActionResult Index()
         {
-            IEnumerable<Category> categories = _context.Categories; 
+            IEnumerable<Category> categories = _unitofWork.Category.GetAll(); 
             return View(categories);
         }
         [HttpGet]
@@ -27,8 +28,8 @@ namespace PieInfo.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Categories.Add(category);
-                _context.SaveChanges();
+                _unitofWork.Category.Add(category);
+                _unitofWork.Save();
                 TempData["Success"] = "Category Created Successful";
                 return RedirectToAction("Index");
             }
@@ -41,7 +42,7 @@ namespace PieInfo.Controllers
             {   
                 return NotFound();
             }
-            var category = _context.Categories.Where(x => x.Id == id).FirstOrDefault();
+            var category = _unitofWork.Category.GetT(x => x.Id == id);
             if(category==null)
             {
                 return NotFound();
@@ -54,8 +55,8 @@ namespace PieInfo.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Categories.Update(category);
-                _context.SaveChanges();
+                _unitofWork.Category.Update(category);
+                _unitofWork.Save();
                 TempData["Success"] = "Category Updated Successful";
                 return RedirectToAction("Index");
             }
@@ -68,7 +69,7 @@ namespace PieInfo.Controllers
             {
                 return NotFound();
             }
-            var category = _context.Categories.Where(x => x.Id == Id).FirstOrDefault();
+            var category = _unitofWork.Category.GetT(x => x.Id == Id);
             
             if (category == null)
             {
@@ -79,15 +80,15 @@ namespace PieInfo.Controllers
         [HttpPost,ActionName("Delete")]
         public IActionResult DeleteDataById(int Id)
         {
-            var deletedata = _context.Categories.Where(x => x.Id == Id).FirstOrDefault();
-            if(deletedata==null)
+            var deletedata =_unitofWork.Category.GetT(x => x.Id == Id);
+            if (deletedata==null)
             {
                 return NotFound();
             }
             else
             {
-                _context.Categories.Remove(deletedata);
-                _context.SaveChanges();
+                _unitofWork.Category.Delete(deletedata);
+                _unitofWork.Save();
                 TempData["Success"] = "Category Deleted Successful";
                 return RedirectToAction("Index");
             }

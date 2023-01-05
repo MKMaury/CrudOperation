@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PieInfo", "PieInfo\PieInfo.csproj", "{6B45B970-E6C3-43A8-8366-97DD86E882AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PieInfo", "PieInfo\PieInfo.csproj", "{6B45B970-E6C3-43A8-8366-97DD86E882AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PieInfo.Models", "PieInfo.Models\PieInfo.Models.csproj", "{84465B2E-7717-4966-A51C-8ED12EA0EA22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PieInfo.DataAccessLayer", "PieInfo.DataAccessLayer\PieInfo.DataAccessLayer.csproj", "{81F33520-8A1B-4048-AB17-A92517E2001D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{6B45B970-E6C3-43A8-8366-97DD86E882AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B45B970-E6C3-43A8-8366-97DD86E882AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B45B970-E6C3-43A8-8366-97DD86E882AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84465B2E-7717-4966-A51C-8ED12EA0EA22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84465B2E-7717-4966-A51C-8ED12EA0EA22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84465B2E-7717-4966-A51C-8ED12EA0EA22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84465B2E-7717-4966-A51C-8ED12EA0EA22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81F33520-8A1B-4048-AB17-A92517E2001D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81F33520-8A1B-4048-AB17-A92517E2001D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81F33520-8A1B-4048-AB17-A92517E2001D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81F33520-8A1B-4048-AB17-A92517E2001D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3526,6 +3526,32 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "PieInfo.DataAccessLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.1",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.1",
+          "PieInfo.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PieInfo.DataAccessLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PieInfo.DataAccessLayer.dll": {}
+        }
+      },
+      "PieInfo.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/PieInfo.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PieInfo.Models.dll": {}
+        }
       }
     }
   },
@@ -10002,6 +10028,16 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "PieInfo.DataAccessLayer/1.0.0": {
+      "type": "project",
+      "path": "../PieInfo.DataAccessLayer/PieInfo.DataAccessLayer.csproj",
+      "msbuildProject": "../PieInfo.DataAccessLayer/PieInfo.DataAccessLayer.csproj"
+    },
+    "PieInfo.Models/1.0.0": {
+      "type": "project",
+      "path": "../PieInfo.Models/PieInfo.Models.csproj",
+      "msbuildProject": "../PieInfo.Models/PieInfo.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10009,7 +10045,8 @@
       "Microsoft.EntityFrameworkCore >= 6.0.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.1",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.11"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.11",
+      "PieInfo.DataAccessLayer >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -10038,7 +10075,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ADMIN\\source\\repos\\PieInfo\\PieInfo.DataAccessLayer\\PieInfo.DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\ADMIN\\source\\repos\\PieInfo\\PieInfo.DataAccessLayer\\PieInfo.DataAccessLayer.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
