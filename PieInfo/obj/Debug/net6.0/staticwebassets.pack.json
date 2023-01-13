@@ -5,6 +5,26 @@
       "PackagePath": "staticwebassets\\PieInfo.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\ADMIN\\source\\repos\\PieInfo\\PieInfo\\wwwroot\\ProductImage\\199a4c5a-62c3-4145-9986-3d95ac706466-Screenshot (2).png",
+      "PackagePath": "staticwebassets\\ProductImage\\199a4c5a-62c3-4145-9986-3d95ac706466-Screenshot (2).png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\source\\repos\\PieInfo\\PieInfo\\wwwroot\\ProductImage\\3ddd1693-fca1-44a4-9df4-3ee9a2eae33d-Screenshot (1).png",
+      "PackagePath": "staticwebassets\\ProductImage\\3ddd1693-fca1-44a4-9df4-3ee9a2eae33d-Screenshot (1).png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\source\\repos\\PieInfo\\PieInfo\\wwwroot\\ProductImage\\56ed6c98-52f6-4121-a210-6a8957633933-Screenshot (2).png",
+      "PackagePath": "staticwebassets\\ProductImage\\56ed6c98-52f6-4121-a210-6a8957633933-Screenshot (2).png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\source\\repos\\PieInfo\\PieInfo\\wwwroot\\ProductImage\\d9a4c056-7cc5-4e98-aad8-007595d0eaf5-Screenshot (2).png",
+      "PackagePath": "staticwebassets\\ProductImage\\d9a4c056-7cc5-4e98-aad8-007595d0eaf5-Screenshot (2).png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\source\\repos\\PieInfo\\PieInfo\\wwwroot\\ProductImage\\fe2a649a-5a9c-4b28-9a0f-46013cb45e48-Screenshot (3).png",
+      "PackagePath": "staticwebassets\\ProductImage\\fe2a649a-5a9c-4b28-9a0f-46013cb45e48-Screenshot (3).png"
+    },
+    {
       "Id": "C:\\Users\\ADMIN\\source\\repos\\PieInfo\\PieInfo\\wwwroot\\css\\Superherobootswatchtheme.css",
       "PackagePath": "staticwebassets\\css\\Superherobootswatchtheme.css"
     },
@@ -15,6 +35,10 @@
     {
       "Id": "C:\\Users\\ADMIN\\source\\repos\\PieInfo\\PieInfo\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\source\\repos\\PieInfo\\PieInfo\\wwwroot\\js\\Product.js",
+      "PackagePath": "staticwebassets\\js\\Product.js"
     },
     {
       "Id": "C:\\Users\\ADMIN\\source\\repos\\PieInfo\\PieInfo\\wwwroot\\js\\site.js",

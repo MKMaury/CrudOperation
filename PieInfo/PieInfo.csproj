@@ -20,4 +20,9 @@
     <ProjectReference Include="..\PieInfo.DataAccessLayer\PieInfo.DataAccessLayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="wwwroot\ProductImage\" />
+  </ItemGroup>
+
 </Project>

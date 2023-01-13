@@ -9,7 +9,7 @@ using PieInfo.Data;
 
 #nullable disable
 
-namespace PieInfo.Migrations
+namespace PieInfo.DataAccessLayer.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20230103102216_AddCategoryToDatabase")]

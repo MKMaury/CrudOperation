@@ -26,7 +26,14 @@ namespace PieInfo.DataAccessLayer.Infrastructure.Repository
 
         public void Update(Category category)
         {
-            _context.Categories.Update(category);
+           // _context.Categories.Update(category);
+           var categoryDb=_context.Categories.Where(x=>x.Id==category.Id).FirstOrDefault();
+            if (categoryDb!=null)
+            {
+                categoryDb.Name=category.Name;
+                categoryDb.DisplayOrder=category.DisplayOrder;
+                categoryDb.CreatedDateTime = category.CreatedDateTime;
+            }
         }
     }
 }

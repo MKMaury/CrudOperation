@@ -2,8 +2,9 @@
 using PieInfo.Models;
 using System.Diagnostics;
 
-namespace PieInfo.Controllers
+namespace PieInfo.Areas.Customer.Controllers
 {
+    [Area("Customer")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
