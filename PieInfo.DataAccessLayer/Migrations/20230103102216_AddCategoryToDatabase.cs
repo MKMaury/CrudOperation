@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace PieInfo.Migrations
+namespace PieInfo.DataAccessLayer.Migrations
 {
     public partial class AddCategoryToDatabase : Migration
     {
