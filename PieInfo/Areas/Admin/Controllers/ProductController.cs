@@ -20,7 +20,7 @@ namespace PieInfo.Areas.Admin.Controllers
         public JsonResult AllProduct()
         {
             //ProductVM productVM = new ProductVM();
-       var  products = _unitofWork.Product.GetAll();
+            var  products = _unitofWork.Product.GetAll(includePropeties:"Category").OrderByDescending(x=>x.Id);
             return Json (new { data=products });
         }
         public IActionResult Index()
@@ -89,6 +89,16 @@ namespace PieInfo.Areas.Admin.Controllers
                     string uploadDir = Path.Combine(_hostEnvironment.WebRootPath, "ProductImage");
                     FileName = Guid.NewGuid().ToString() + "-" + file.FileName;
                     string filePath= Path.Combine(uploadDir, FileName);
+
+                    if(vm.Products.ImageUrl!=null)
+                    {
+                        var oldImagePath = Path.Combine(_hostEnvironment.WebRootPath, vm.Products.ImageUrl.TrimStart('\\'));
+                        if(System.IO.File.Exists(oldImagePath))
+                        {
+                            System.IO.File.Delete(oldImagePath);
+                        }
+                    }
+
                     using (var fileStream = new FileStream(filePath, FileMode.Create))
                     {
                         file.CopyTo(fileStream);
@@ -98,7 +108,12 @@ namespace PieInfo.Areas.Admin.Controllers
                 if(vm.Products.Id==0)
                 {
                     _unitofWork.Product.Add(vm.Products);
-                   
+                    TempData["Success"] = "Product Created Done";
+                }
+                else
+                {
+                    _unitofWork.Product.Update(vm.Products);
+                    TempData["Success"] = "Product Updated Done";
                 }
                  _unitofWork.Save();
                 return RedirectToAction("Index");
@@ -133,36 +148,45 @@ namespace PieInfo.Areas.Admin.Controllers
             }
             return View();
         }
-        [HttpGet]
-        public IActionResult Delete(int Id)
-        {
-            if (Id == null || Id == 0)
-            {
-                return NotFound();
-            }
-            var product = _unitofWork.Product.GetT(x => x.Id == Id);
+        //[HttpGet]
+        //public IActionResult Delete(int Id)
+        //{
+        //    if (Id == null || Id == 0)
+        //    {
+        //        return NotFound();
+        //    }
+        //    var product = _unitofWork.Product.GetT(x => x.Id == Id);
 
-            if (product == null)
-            {
-                return NotFound();
-            }
-            return View(product);
-        }
-        [HttpPost, ActionName("Delete")]
-        public IActionResult DeleteDataById(int Id)
+        //    if (product == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    return View(product);
+        //}
+
+        //[HttpPost, ActionName("Delete")]
+        [HttpDelete]
+        public IActionResult Delete(int Id)
         {
             var deletedata = _unitofWork.Product.GetT(x => x.Id == Id);
             if (deletedata == null)
             {
-                return NotFound();
+                 return Json(new { success = false, Error = "Error in Fetching Data" });
             }
             else
             {
+               var  oldImagePath = Path.Combine(_hostEnvironment.WebRootPath, deletedata.ImageUrl.TrimStart('\\'));
+                if (System.IO.File.Exists(oldImagePath))
+                {
+                    System.IO.File.Delete(oldImagePath);
+                }
                 _unitofWork.Product.Delete(deletedata);
+                  //_unitofWork.Product.Delete( oldImagePath);
                 _unitofWork.Save();
-                TempData["Success"] = "Category Deleted Successful";
-                return RedirectToAction("Index");
+                return Json(new { success = true, message = "Product has been Deleted" });
+
             }
+
 
         }
 

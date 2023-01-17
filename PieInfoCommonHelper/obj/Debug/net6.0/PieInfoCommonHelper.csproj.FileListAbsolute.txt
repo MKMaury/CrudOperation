@@ -1,0 +1,12 @@
+C:\Users\ADMIN\source\repos\PieInfo\PieInfoCommonHelper\bin\Debug\net6.0\PieInfoCommonHelper.deps.json
+C:\Users\ADMIN\source\repos\PieInfo\PieInfoCommonHelper\bin\Debug\net6.0\PieInfoCommonHelper.dll
+C:\Users\ADMIN\source\repos\PieInfo\PieInfoCommonHelper\bin\Debug\net6.0\PieInfoCommonHelper.pdb
+C:\Users\ADMIN\source\repos\PieInfo\PieInfoCommonHelper\obj\Debug\net6.0\PieInfoCommonHelper.csproj.AssemblyReference.cache
+C:\Users\ADMIN\source\repos\PieInfo\PieInfoCommonHelper\obj\Debug\net6.0\PieInfoCommonHelper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\source\repos\PieInfo\PieInfoCommonHelper\obj\Debug\net6.0\PieInfoCommonHelper.AssemblyInfoInputs.cache
+C:\Users\ADMIN\source\repos\PieInfo\PieInfoCommonHelper\obj\Debug\net6.0\PieInfoCommonHelper.AssemblyInfo.cs
+C:\Users\ADMIN\source\repos\PieInfo\PieInfoCommonHelper\obj\Debug\net6.0\PieInfoCommonHelper.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\source\repos\PieInfo\PieInfoCommonHelper\obj\Debug\net6.0\PieInfoCommonHelper.dll
+C:\Users\ADMIN\source\repos\PieInfo\PieInfoCommonHelper\obj\Debug\net6.0\refint\PieInfoCommonHelper.dll
+C:\Users\ADMIN\source\repos\PieInfo\PieInfoCommonHelper\obj\Debug\net6.0\PieInfoCommonHelper.pdb
+C:\Users\ADMIN\source\repos\PieInfo\PieInfoCommonHelper\obj\Debug\net6.0\ref\PieInfoCommonHelper.dll

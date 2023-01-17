@@ -17,7 +17,8 @@ namespace PieInfo.Areas.Admin.Controllers
         public IActionResult Index()
         {
             CategoryVM categoryVM=new CategoryVM();
-             categoryVM.categories = _unitofWork.Category.GetAll();
+           // categoryVM.categories = _unitofWork.Category.GetAll();
+            categoryVM.categories = _unitofWork.Category.GetAll().OrderByDescending(x=>x.Id);
             return View(categoryVM);
         }
         //[HttpGet]
@@ -39,7 +40,7 @@ namespace PieInfo.Areas.Admin.Controllers
         //    return View();
         //}
         [HttpGet]
-        public IActionResult CreateUpdate(int id)
+        public IActionResult CreateUpdate(int? id)
         {
             CategoryVM vm=new CategoryVM();
             if (id == null || id == 0)
@@ -51,7 +52,7 @@ namespace PieInfo.Areas.Admin.Controllers
                vm.Category = _unitofWork.Category.GetT(x => x.Id == id);
                 if (vm.Category == null)
                 {
-                    return NotFound();
+                    return NotFound(vm);
                 }
                 else
                 {

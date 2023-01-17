@@ -17,6 +17,7 @@ namespace PieInfo.DataAccessLayer.Infrastructure.Repository
         public Repository(ApplicationDbContext context)
         {
             _context = context;
+            _context.Products.Include(x => x.Category);
             _dbSet = _context.Set<T>();
         }
 
@@ -37,14 +38,33 @@ namespace PieInfo.DataAccessLayer.Infrastructure.Repository
           _dbSet.RemoveRange    (entity);
         }
 
-        public T GetT(Expression<Func<T, bool>> predicate)
+ 
+        public IEnumerable<T> GetAll(string? includePropeties = null)
         {
-            return _dbSet.Where(predicate).FirstOrDefault();
+            IQueryable<T> query = _dbSet;
+            if(includePropeties != null)
+            {
+                foreach(var item in includePropeties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query= query.Include(item); 
+                }
+            }   
+            return query.ToList();
+        }
+        public T GetT(Expression<Func<T, bool>> predicate, string? includeProperties)
+        {
+
+            IQueryable<T> query = _dbSet;
+            query = query.Where(predicate);
+            if (includeProperties != null)
+            {
+                foreach (var item in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(item);
+                }
+            }
+            return query.FirstOrDefault();
         }
 
-        public IEnumerable<T> GetAll()
-        {
-            return _dbSet.ToList();
-        }
     }
 }
