@@ -11,9 +11,9 @@ namespace PieInfo.Models.ViewModel
 {
     public class ProductVM
     {
-      public Product  Products{ get; set; }
+        public Product  Products{ get; set; }
         [ValidateNever]
-       public IEnumerable<Product> products { get; set; } =new List<Product>();
+        public IEnumerable<Product> products { get; set; } =new List<Product>();
         [ValidateNever]
         public  IEnumerable<SelectListItem> categories { get; set;}
     }
